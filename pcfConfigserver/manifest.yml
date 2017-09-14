@@ -1,0 +1,12 @@
+---
+instances: 1
+memory: 1G
+path: target/pcfConfigServer-0.0.1-SNAPSHOT.jar
+applications:
+  - name: pcfConfigServer
+    host: pcfConfigServer
+    services:
+      - config-server
+    env: 
+       SPRING_PROFILES_ACTIVE: dev 
+    

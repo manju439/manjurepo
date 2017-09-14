@@ -1,0 +1,15 @@
+# code_snippet springApplicationName start
+spring:
+  application:
+    name: pcfConfigserver
+# code_snippet springApplicationName end
+
+secretMenu: Animal Crackers
+
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme
+
