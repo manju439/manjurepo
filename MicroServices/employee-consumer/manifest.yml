@@ -1,0 +1,9 @@
+---
+instances: 1
+memory: 512MB
+path: target/employee-consumer-0.0.1-SNAPSHOT.jar
+applications:
+  - name: employee-consumer-app
+    services:
+      - service-registry
+    
