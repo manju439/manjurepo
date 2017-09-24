@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: employee-consumer-app
+  cloud:
+    services:
+      registrationMethod: route
+
+server:
+  port: 8085
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false
+  profiles: dev
+
+security:
+  basic:
+    enabled: false
+
+eureka:
+  instance:
+    statusPageUrl: https://eureka-6612e158-6acc-44de-9491-f05f8220b2ca.cfapps.io/info
+    healthCheckUrl: https://eureka-6612e158-6acc-44de-9491-f05f8220b2ca.cfapps.io/health
+    homePageUrl: https://eureka-6612e158-6acc-44de-9491-f05f8220b2ca.cfapps.io/
